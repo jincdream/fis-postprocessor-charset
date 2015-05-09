@@ -1,0 +1,23 @@
+{
+  "name": "fis-postprocessor-charset",
+  "version": "0.1.0",
+  "description": "add handle when to gbk end",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jincdream/fis-postprocessor-toGbked.git"
+  },
+  "keywords": [
+    "gbk",
+    "charset"
+  ],
+  "author": "JinC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jincdream/fis-postprocessor-toGbked/issues"
+  },
+  "homepage": "https://github.com/jincdream/fis-postprocessor-toGbked"
+}
