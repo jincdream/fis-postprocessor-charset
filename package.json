@@ -1,6 +1,6 @@
 {
   "name": "fis-postprocessor-charset",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "add handle when to gbk end",
   "main": "index.js",
   "scripts": {

@@ -1,0 +1,92 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/iojs', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.9.0
+3 info using node@v2.0.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/cenjinchao/pc/plantform/resource/fis-postprocessor-charset',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/cenjinchao/.npm/fis-postprocessor-charset/0.1.2/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/cenjinchao/.npm/fis-postprocessor-charset/0.1.2/package.tgz',
+9 verbose tar pack   '/Users/cenjinchao/pc/plantform/resource/fis-postprocessor-charset' ]
+10 verbose tarball /Users/cenjinchao/.npm/fis-postprocessor-charset/0.1.2/package.tgz
+11 verbose folder /Users/cenjinchao/pc/plantform/resource/fis-postprocessor-charset
+12 info prepublish fis-postprocessor-charset@0.1.2
+13 verbose addLocalTarball adding from inside cache /Users/cenjinchao/.npm/fis-postprocessor-charset/0.1.2/package.tgz
+14 silly cache afterAdd fis-postprocessor-charset@0.1.2
+15 verbose afterAdd /Users/cenjinchao/.npm/fis-postprocessor-charset/0.1.2/package/package.json not in flight; writing
+16 verbose afterAdd /Users/cenjinchao/.npm/fis-postprocessor-charset/0.1.2/package/package.json written
+17 silly publish { name: 'fis-postprocessor-charset',
+17 silly publish   version: '0.1.2',
+17 silly publish   description: 'add handle when to gbk end',
+17 silly publish   main: 'index.js',
+17 silly publish   scripts: { test: '' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/jincdream/fis-postprocessor-toGbked.git' },
+17 silly publish   keywords: [ 'gbk', 'charset' ],
+17 silly publish   author: { name: 'JinC' },
+17 silly publish   license: 'MIT',
+17 silly publish   bugs: { url: 'https://github.com/jincdream/fis-postprocessor-toGbked/issues' },
+17 silly publish   homepage: 'https://github.com/jincdream/fis-postprocessor-toGbked',
+17 silly publish   readme: '```\nfis.config.merge({\n  modules:{\n    postprocessor:{\n      html:\'charset\'\n    }\n  }\n})\n```\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '6b0c4be9bf7a557f573918e7e0e35c99e263611e',
+17 silly publish   _id: 'fis-postprocessor-charset@0.1.2',
+17 silly publish   _shasum: 'afcddf4b7a09e889b76d7f67b4bf044f9067c13a',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name fis-postprocessor-charset
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/fis-postprocessor-charset
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/cenjinchao/.npm/fis-postprocessor-charset/0.1.2/package.tgz
+25 verbose request uri https://registry.npmjs.org/fis-postprocessor-charset
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 09:50:17
+28 verbose request using bearer token for auth
+29 verbose request id 482cbb92dd351968
+30 http request PUT https://registry.npmjs.org/fis-postprocessor-charset
+31 http 403 https://registry.npmjs.org/fis-postprocessor-charset
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Fri, 15 May 2015 01:50:16 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-nrt6125-NRT',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1431654616.480106,VS0,VE512' }
+33 verbose request invalidating /Users/cenjinchao/.npm/registry.npmjs.org/fis-postprocessor-charset on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 0.1.2." : fis-postprocessor-charset
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:368:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1219:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:166:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1167:12)
+35 verbose stack     at emitNone (events.js:72:20)
+36 verbose statusCode 403
+37 verbose pkgid fis-postprocessor-charset
+38 verbose cwd /Users/cenjinchao/pc/plantform/resource/fis-postprocessor-charset
+39 error Darwin 14.4.0
+40 error argv "/usr/local/bin/iojs" "/usr/local/bin/npm" "publish"
+41 error node v2.0.1
+42 error npm  v2.9.0
+43 error code E403
+44 error "You cannot publish over the previously published version 0.1.2." : fis-postprocessor-charset
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
